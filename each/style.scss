@@ -1,0 +1,11 @@
+$lista: pink, yellow, orange, green, purple;
+$contador: 1;
+
+@each $cor in $lista {
+    .item-#{$contador} {
+        background-color: $cor;
+        margin-bottom: 4px;
+    }
+
+    $contador: $contador + 1;
+}
